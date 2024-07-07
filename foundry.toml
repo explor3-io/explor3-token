@@ -2,10 +2,10 @@
 [profile.default]
 src = "src"
 out = "out"
-libs = ["lib"]
-solc = "0.8.20"
+libs = ["lib", "node_modules"]
+solc = "0.8.25"
 auto_detect_solc = false
-evm_version = "paris"      # default to paris due to lack of PUSH0 support
+evm_version = "shanghai"
 verbosity = 1
 gas_reports = ["*"]
 optimize = true
@@ -17,6 +17,9 @@ fs_permissions = []
 remappings = [
     'ds-test/=lib/forge-std/lib/ds-test/src/',
     'forge-std/=lib/forge-std/src/',
+    '@layerzerolabs/=node_modules/@layerzerolabs/',
+    '@openzeppelin/=node_modules/@openzeppelin/',
+    'solidity-bytes-utils/=node_modules/solidity-bytes-utils/',
 ]
 
 [profile.default.fuzz]

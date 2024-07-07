@@ -3,6 +3,7 @@ out/
 docs/
 broadcast/
 deployments/
+node_modules/
 
 solstat_report.md
 
